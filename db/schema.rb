@@ -11,10 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130125175435) do
+ActiveRecord::Schema.define(:version => 20130125180326) do
 
   create_table "polls", :force => true do |t|
-    t.string "question"
+    t.string  "question"
+    t.integer "user_id"
   end
 
   create_table "responses", :force => true do |t|
